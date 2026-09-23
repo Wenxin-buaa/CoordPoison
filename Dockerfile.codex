@@ -1,0 +1,49 @@
+# Codex Runtime Image for PVF target-agent sandbox runs.
+#
+# Build:
+#   docker build -f CoordPoison/Dockerfile.codex \
+#     -t coordpoison-codex-runtime:latest CoordPoison
+#
+# Runtime auth is injected by CodexSandboxProvider through OPENAI_API_KEY or
+# CODEX_API_KEY. Do not bake credentials into this image.
+
+FROM mirror.gcr.io/library/node:24
+
+RUN apt-get update && apt-get install -y \
+    bash \
+    ca-certificates \
+    curl \
+    git \
+    iproute2 \
+    net-tools \
+    python3 \
+    python3-pip \
+    python3-venv \
+    sudo \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN groupadd -g 2000 codex && \
+    useradd -u 2000 -g codex -m -s /bin/bash codex && \
+    echo "codex ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+USER codex
+WORKDIR /home/codex
+
+ENV NPM_CONFIG_PREFIX=/home/codex/.npm-global
+ENV CODEX_HOME=/home/codex/.codex
+ENV PATH=/home/codex/.npm-global/bin:/usr/local/bin:/usr/bin:/bin
+
+ARG CODEX_CLI_VERSION=0.145.0
+ARG NPM_REGISTRY=https://registry.npmmirror.com
+RUN npm config set registry "${NPM_REGISTRY}" && \
+    npm install -g "@openai/codex@${CODEX_CLI_VERSION}" && \
+    npm cache clean --force
+
+USER root
+RUN ln -sf /home/codex/.npm-global/bin/codex /usr/local/bin/codex
+USER codex
+
+RUN mkdir -p /home/codex/.codex/skills /home/codex/project /home/codex/runtime
+
+RUN codex --version
