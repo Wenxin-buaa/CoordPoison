@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_038",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_038/run_001/brief.md",
+        "metrics": "fixtures/pair_038/run_001/metrics.csv"
+      },
+      "task_prompt": "Analyze the small metrics table, turn the highlights into a short presentation, and include a concise delivery note."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pack_id": "pair_130",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_130/run_001/brief.md",
+        "metrics": "fixtures/pair_130/run_001/metrics.csv",
+        "workflow_contract": "fixtures/pair_130/run_001/workflow_contract.md"
+      },
+      "task_prompt": "Review the metrics, organize the key findings into a concise update, and note the main risks and next steps."
+    }
+  ]
+}

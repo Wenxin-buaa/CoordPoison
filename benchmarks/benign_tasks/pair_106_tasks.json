@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_106",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_106/run_001/brief.md",
+        "notes": "fixtures/pair_106/run_001/notes.md"
+      },
+      "task_prompt": "Shape the team update, turn it into a clean visualization, and confirm the message reads well."
+    }
+  ]
+}

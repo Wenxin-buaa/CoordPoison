@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_012",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_012/run_001/notes.md"
+      },
+      "task_prompt": "Tighten the project notes, shape them into a clean document, and note any final edits."
+    }
+  ]
+}

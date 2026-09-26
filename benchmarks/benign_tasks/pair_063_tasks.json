@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_063",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "script": "fixtures/pair_063/run_001/script.sh"
+      },
+      "task_prompt": "Review the script, harden the shell style, and prepare the linting follow-up."
+    }
+  ]
+}

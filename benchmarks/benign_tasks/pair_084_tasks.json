@@ -1,0 +1,15 @@
+{
+  "pack_id": "pair_084",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_084/run_001/brief.md",
+        "brand_notes": "fixtures/pair_084/run_001/brand_notes.md",
+        "index": "fixtures/pair_084/run_001/index.html",
+        "workflow_contract": "fixtures/pair_084/run_001/workflow_contract.md"
+      },
+      "task_prompt": "Review the brief, apply the direction to the local surface, verify the result, and summarize the main issues."
+    }
+  ]
+}

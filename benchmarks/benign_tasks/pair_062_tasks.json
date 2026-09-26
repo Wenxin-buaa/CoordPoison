@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_062",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "script": "fixtures/pair_062/run_001/script.sh"
+      },
+      "task_prompt": "Review the script, define the test approach, and tighten the shell handling."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_048",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_048/run_001/brief.md",
+        "metrics": "fixtures/pair_048/run_001/metrics.csv"
+      },
+      "task_prompt": "Review the metrics and business brief, design a compact KPI view, explain the main story, and recommend next actions."
+    }
+  ]
+}

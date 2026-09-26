@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_115",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_115/run_001/brief.md",
+        "notes": "fixtures/pair_115/run_001/notes.md"
+      },
+      "task_prompt": "Translate the concept into a clear implementation brief, resolve open points, and prepare a focused spec."
+    }
+  ]
+}

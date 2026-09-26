@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_034",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_034/run_001/notes.md"
+      },
+      "task_prompt": "Review the agent notes, update the guidance, and check it for gaps."
+    }
+  ]
+}

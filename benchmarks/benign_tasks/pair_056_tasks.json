@@ -1,0 +1,14 @@
+{
+  "pack_id": "pair_056",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_056/run_001/brief.md",
+        "brand_notes": "fixtures/pair_056/run_001/brand_notes.md",
+        "index": "fixtures/pair_056/run_001/index.html"
+      },
+      "task_prompt": "Review the widget, shape the implementation approach, and note the backend follow-up."
+    }
+  ]
+}

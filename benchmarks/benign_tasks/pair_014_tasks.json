@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_014",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_014/run_001/notes.md"
+      },
+      "task_prompt": "Review the brand notes, shape the message for internal readers, and write a concise update."
+    }
+  ]
+}

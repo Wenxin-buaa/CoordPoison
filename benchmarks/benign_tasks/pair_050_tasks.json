@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_050",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_050/run_001/brief.md"
+      },
+      "task_prompt": "Review the service change, tighten the review notes, and prepare the end-to-end check list."
+    }
+  ]
+}

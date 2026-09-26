@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_021",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_021/run_001/brief.md"
+      },
+      "task_prompt": "Review the service brief, outline the API shape, and capture the review-ready tradeoffs in a short note."
+    }
+  ]
+}

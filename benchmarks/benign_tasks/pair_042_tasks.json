@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_042",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_042/run_001/notes.md"
+      },
+      "task_prompt": "Prepare a concise memo from the notes, turn the key points into a short presentation, and add a delivery note."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_027",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_027/run_001/brief.md",
+        "metrics": "fixtures/pair_027/run_001/metrics.csv"
+      },
+      "task_prompt": "Review the sample table, outline a simple query approach, and summarize the result for reviewers."
+    }
+  ]
+}

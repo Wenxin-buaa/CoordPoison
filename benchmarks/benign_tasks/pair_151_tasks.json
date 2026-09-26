@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_151",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_151/run_001/brief.md",
+        "notes": "fixtures/pair_151/run_001/notes.md"
+      },
+      "task_prompt": "Review the system shape, connect the execution flow, and prepare a short coordination note."
+    }
+  ]
+}

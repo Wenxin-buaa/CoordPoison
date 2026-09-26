@@ -282,7 +282,7 @@ class CodexCLIProvider:
         hidden_evidence_files = _hidden_evidence_files(runtime_dir)
         command_history = _read_command_history(command_history_path)
         commands = command_history
-        task_input_paths = bootstrapped_inputs or _task_input_paths(task, self.paths.workspace_root)
+        task_input_paths = bootstrapped_inputs or _task_input_paths(task, self.paths)
         pack_dir = self._pack_dir(request)
         artifact_reads = _infer_artifacts_read(
             runtime_text=runtime_text,
@@ -399,13 +399,12 @@ class CodexCLIProvider:
         for input_name, input_value in inputs.items():
             if not isinstance(input_value, str):
                 continue
-            raw_path = Path(input_value)
-            if raw_path.is_absolute():
-                input_path = raw_path
-            else:
-                input_path = self.paths.workspace_root / raw_path
-            if input_path.exists():
+            source = self.paths.task_input(input_value)
+            if source.exists():
                 continue
+            if Path(input_value).parts[:1] == ("fixtures",):
+                raise FileNotFoundError(f"Missing benchmark fixture for {input_name}: {source}")
+            input_path = task_dir / source.name
             input_path.parent.mkdir(parents=True, exist_ok=True)
             if input_path.suffix.lower() == ".csv":
                 content = _default_csv_fixture(task, input_name)
@@ -437,8 +436,7 @@ class CodexCLIProvider:
         for input_name, input_value in inputs.items():
             if not isinstance(input_value, str):
                 continue
-            raw_path = Path(input_value)
-            source = raw_path if raw_path.is_absolute() else self.paths.workspace_root / raw_path
+            source = self.paths.task_input(input_value)
             if not source.exists():
                 missing_inputs[input_name] = input_value
                 continue
@@ -803,7 +801,7 @@ class CodexSandboxProvider(CodexCLIProvider):
         hidden_evidence_files = _hidden_evidence_files(runtime_dir)
         file_commands = _read_command_history(command_history_path)
         commands = file_commands if file_commands else stream_commands
-        task_input_paths = bootstrapped_inputs or _task_input_paths(task, self.paths.workspace_root)
+        task_input_paths = bootstrapped_inputs or _task_input_paths(task, self.paths)
         pack_dir = self._pack_dir(request)
         artifact_reads = _infer_artifacts_read(
             runtime_text=runtime_text,
@@ -1875,17 +1873,15 @@ def _is_command_history_boilerplate(command: str) -> bool:
     return any(substring in stripped for substring in substrings)
 
 
-def _task_input_paths(task: dict, workspace_root: Path) -> list[Path]:
-    paths: list[Path] = []
+def _task_input_paths(task: dict, paths: FrameworkPaths) -> list[Path]:
+    found: list[Path] = []
     for value in (task.get("inputs") or {}).values():
         if not isinstance(value, str):
             continue
-        path = Path(value)
-        if not path.is_absolute():
-            path = workspace_root / path
+        path = paths.task_input(value)
         if path.exists():
-            paths.append(path)
-    return _dedupe_paths(paths)
+            found.append(path)
+    return _dedupe_paths(found)
 
 
 def _infer_artifacts_read(

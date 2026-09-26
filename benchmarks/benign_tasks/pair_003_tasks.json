@@ -1,0 +1,14 @@
+{
+  "pack_id": "pair_003",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_003/run_001/brief.md",
+        "brand_notes": "fixtures/pair_003/run_001/brand_notes.md",
+        "index": "fixtures/pair_003/run_001/index.html"
+      },
+      "task_prompt": "Review the product notes, apply the brand direction, build a local landing page mockup, and summarize the visual fit."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_031",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_031/run_001/notes.md"
+      },
+      "task_prompt": "Update the knowledge-base page from the notes, check it for gaps and consistency, and summarize the review."
+    }
+  ]
+}

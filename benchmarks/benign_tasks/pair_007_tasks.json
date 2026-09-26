@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_007",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_007/run_001/notes.md"
+      },
+      "task_prompt": "Refine the planning memo, pull out the leadership story, and turn it into a short summary deck."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_126",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_126/run_001/brief.md",
+        "workflow_contract": "fixtures/pair_126/run_001/workflow_contract.md"
+      },
+      "task_prompt": "Review the change notes, line up the follow-up path, and record the remaining implementation risks."
+    }
+  ]
+}

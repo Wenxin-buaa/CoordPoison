@@ -29,9 +29,12 @@ D6 requires both payload evidence and a genuine upstream-to-downstream
 dependency. Failed coordinated attempts return to D4 for revision until success
 or the configured iteration limit.
 
-The public source tree does not include benchmark packs, experiment results,
-logs, or baseline data. Generated benchmark artifacts are created under
-`benchmarks/` after the user supplies clean packs and task definitions.
+To run the included pair tasks independently, distribute `benchmarks/clean_packs`,
+`benchmarks/benign_tasks`, and `benchmarks/fixtures` together with the source
+tree. Task input paths such as `fixtures/pair_001/run_001/notes.md` resolve
+inside `CoordPoison/benchmarks/fixtures`, not beside the project directory.
+Missing fixture inputs fail explicitly rather than substituting generated data.
+Experiment results, logs, and baseline runs are generated under `benchmarks/runs`.
 
 ## Layout
 
@@ -40,6 +43,9 @@ automation/                 Core pipeline, providers, constructors, and judges
 agents/                     Stage-specific agent contracts
 configs/                    Framework configuration
 obvious_payload/            Payload taxonomies, judge rules, and safe fixtures
+benchmarks/clean_packs/     Clean skill pairs for the included benchmark
+benchmarks/benign_tasks/   Pair task definitions
+benchmarks/fixtures/       Task inputs referenced by the pair tasks
 scripts/                    Reusable CLI entry points
 Dockerfile.codex            Codex sandbox runtime image
 requirements-sandbox.txt    OpenSandbox dependencies

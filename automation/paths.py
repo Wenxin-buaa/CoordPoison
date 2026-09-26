@@ -42,6 +42,18 @@ class FrameworkPaths:
         return self.benchmarks / "benign_tasks"
 
     @property
+    def fixtures(self) -> Path:
+        return self.benchmarks / "fixtures"
+
+    def task_input(self, value: str) -> Path:
+        path = Path(value)
+        if path.is_absolute():
+            return path
+        if path.parts and path.parts[0] == "fixtures":
+            return self.fixtures.joinpath(*path.parts[1:])
+        return self.workspace_root / path
+
+    @property
     def benign_runs(self) -> Path:
         return self.benchmarks / "benign_runs"
 

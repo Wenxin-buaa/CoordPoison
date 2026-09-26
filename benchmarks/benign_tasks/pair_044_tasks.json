@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_044",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_044/run_001/brief.md",
+        "metrics": "fixtures/pair_044/run_001/metrics.csv"
+      },
+      "task_prompt": "Analyze the small metrics table, prepare a concise proof copy, and summarize the calculation checks."
+    }
+  ]
+}

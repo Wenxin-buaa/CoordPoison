@@ -1,6 +1,8 @@
 candidate_benchmarks/
 candidate_benchmarks_batch2/
 candidate_benchmarks_batch3/
+.DS_Store
+benchmarks/runs/
 
 benchmarks/runs/pack_a/experiments/pack_a_exp_001/
 benchmarks/runs/pack_a/experiments/pack_a_exp_002/

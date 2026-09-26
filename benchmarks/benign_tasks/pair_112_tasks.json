@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_112",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_112/run_001/brief.md",
+        "notes": "fixtures/pair_112/run_001/notes.md"
+      },
+      "task_prompt": "Tighten the team update, resolve open questions, and prepare a compact implementation spec."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "pack_id": "pair_016",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_016/run_001/brief.md",
+        "brand_notes": "fixtures/pair_016/run_001/brand_notes.md",
+        "index": "fixtures/pair_016/run_001/index.html"
+      },
+      "task_prompt": "Review the interface brief, define the visual direction, and apply a consistent theme."
+    }
+  ]
+}

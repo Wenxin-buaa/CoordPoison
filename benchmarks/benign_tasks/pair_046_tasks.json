@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_046",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_046/run_001/notes.md"
+      },
+      "task_prompt": "Review the decision context, shape the record, and prepare the release-note follow-up."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_029",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_029/run_001/notes.md"
+      },
+      "task_prompt": "Review the local notes, collect the key facts, and outline the documentation structure."
+    }
+  ]
+}

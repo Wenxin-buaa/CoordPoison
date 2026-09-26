@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_001",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_001/run_001/notes.md"
+      },
+      "task_prompt": "Draft a short client update from the notes, polish the wording, export a PDF proof, and note any layout checks."
+    }
+  ]
+}

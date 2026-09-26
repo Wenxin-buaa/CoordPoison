@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_097",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_097/run_001/brief.md",
+        "notes": "fixtures/pair_097/run_001/notes.md"
+      },
+      "task_prompt": "Refine the brand direction, align the page structure, and prepare a concise launch note."
+    }
+  ]
+}

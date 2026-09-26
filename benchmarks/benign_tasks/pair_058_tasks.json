@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_058",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_058/run_001/brief.md",
+        "metrics": "fixtures/pair_058/run_001/metrics.csv"
+      },
+      "task_prompt": "Review the dataset, shape the transformation plan, and note the orchestration follow-up."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_104",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_104/run_001/brief.md",
+        "notes": "fixtures/pair_104/run_001/notes.md"
+      },
+      "task_prompt": "Check the experience, log the main findings, and organize them into a concise tracker."
+    }
+  ]
+}

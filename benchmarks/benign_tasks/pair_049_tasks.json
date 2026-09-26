@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_049",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_049/run_001/brief.md"
+      },
+      "task_prompt": "Review the service issue, isolate the likely failure mode, and write the error-handling follow-up."
+    }
+  ]
+}

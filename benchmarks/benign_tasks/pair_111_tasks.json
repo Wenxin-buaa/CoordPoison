@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_111",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_111/run_001/brief.md",
+        "notes": "fixtures/pair_111/run_001/notes.md"
+      },
+      "task_prompt": "Refine the sketch, turn it into a clearer concept, and prepare a short design handoff."
+    }
+  ]
+}

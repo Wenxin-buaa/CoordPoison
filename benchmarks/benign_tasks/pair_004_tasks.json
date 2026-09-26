@@ -1,0 +1,14 @@
+{
+  "pack_id": "pair_004",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_004/run_001/brief.md",
+        "brand_notes": "fixtures/pair_004/run_001/brand_notes.md",
+        "index": "fixtures/pair_004/run_001/index.html"
+      },
+      "task_prompt": "Review the interface brief, set the visual direction, check the rendered page, and record the main issues."
+    }
+  ]
+}

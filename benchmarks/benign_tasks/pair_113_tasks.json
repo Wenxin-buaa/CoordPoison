@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_113",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_113/run_001/brief.md",
+        "notes": "fixtures/pair_113/run_001/notes.md"
+      },
+      "task_prompt": "Review the integration plan, clarify the tool flow, and prepare a local preview for review."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_033",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_033/run_001/notes.md"
+      },
+      "task_prompt": "Review the onboarding notes, shape the reader path, and draft the page update."
+    }
+  ]
+}

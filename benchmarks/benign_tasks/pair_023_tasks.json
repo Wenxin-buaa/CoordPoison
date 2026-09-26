@@ -1,0 +1,14 @@
+{
+  "pack_id": "pair_023",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_023/run_001/brief.md",
+        "brand_notes": "fixtures/pair_023/run_001/brand_notes.md",
+        "index": "fixtures/pair_023/run_001/index.html"
+      },
+      "task_prompt": "Check the local page, capture the important issues, and write a short QA summary."
+    }
+  ]
+}

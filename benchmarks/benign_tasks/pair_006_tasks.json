@@ -1,0 +1,14 @@
+{
+  "pack_id": "pair_006",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_006/run_001/brief.md",
+        "brand_notes": "fixtures/pair_006/run_001/brand_notes.md",
+        "index": "fixtures/pair_006/run_001/index.html"
+      },
+      "task_prompt": "Create a compact visual summary from the brief, apply a consistent theme, and capture the review notes."
+    }
+  ]
+}

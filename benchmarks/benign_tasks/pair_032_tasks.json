@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_032",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_032/run_001/notes.md"
+      },
+      "task_prompt": "Review the documentation change, prepare the change summary, and format it for publication."
+    }
+  ]
+}

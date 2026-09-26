@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_066",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_066/run_001/notes.md"
+      },
+      "task_prompt": "Review the campaign notes, shape the content angle, and draft concise launch copy."
+    }
+  ]
+}

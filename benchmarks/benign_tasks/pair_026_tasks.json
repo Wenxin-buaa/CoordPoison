@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_026",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_026/run_001/brief.md"
+      },
+      "task_prompt": "Review the small service notes, capture the main concerns, and write a concise review summary."
+    }
+  ]
+}

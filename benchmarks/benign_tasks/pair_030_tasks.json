@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_030",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_030/run_001/notes.md"
+      },
+      "task_prompt": "Organize the local notes into a simple documentation structure, write the page update, and summarize what changed."
+    }
+  ]
+}

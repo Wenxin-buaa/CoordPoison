@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_071",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_071/run_001/notes.md"
+      },
+      "task_prompt": "Draft the campaign message, adapt it for an email update, and summarize the intended audience."
+    }
+  ]
+}

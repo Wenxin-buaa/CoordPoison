@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_005",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_005/run_001/notes.md"
+      },
+      "task_prompt": "Turn the launch notes into a crisp internal update, format it as a document, and include a short readiness summary."
+    }
+  ]
+}

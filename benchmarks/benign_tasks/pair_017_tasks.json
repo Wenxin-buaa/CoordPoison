@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_017",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_017/run_001/notes.md"
+      },
+      "task_prompt": "Turn the project notes into a concise markdown report, export a PDF copy, and record formatting checks."
+    }
+  ]
+}

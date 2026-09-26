@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_068",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_068/run_001/brief.md",
+        "metrics": "fixtures/pair_068/run_001/metrics.csv"
+      },
+      "task_prompt": "Review the sample metrics, identify the main signal, and prepare a concise marketing plan."
+    }
+  ]
+}

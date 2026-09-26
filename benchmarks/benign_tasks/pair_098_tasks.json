@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_098",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_098/run_001/brief.md",
+        "notes": "fixtures/pair_098/run_001/notes.md"
+      },
+      "task_prompt": "Turn the visual direction into a clear written brief, check for gaps, and prepare a polished summary."
+    }
+  ]
+}

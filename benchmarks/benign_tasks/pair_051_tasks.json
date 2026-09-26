@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_051",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_051/run_001/brief.md"
+      },
+      "task_prompt": "Review the service flow, clarify the authentication path, and note the error-handling follow-up."
+    }
+  ]
+}

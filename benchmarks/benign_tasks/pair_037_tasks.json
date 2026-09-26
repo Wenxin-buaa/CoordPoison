@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_037",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_037/run_001/notes.md"
+      },
+      "task_prompt": "Prepare a concise report from the notes, export a PDF proof, and record the layout checks."
+    }
+  ]
+}

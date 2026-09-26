@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_109",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_109/run_001/brief.md",
+        "notes": "fixtures/pair_109/run_001/notes.md"
+      },
+      "task_prompt": "Set up the experiment framing, align the team on the plan, and prepare a short update."
+    }
+  ]
+}

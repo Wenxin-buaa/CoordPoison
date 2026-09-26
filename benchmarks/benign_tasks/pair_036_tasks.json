@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_036",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_036/run_001/notes.md"
+      },
+      "task_prompt": "Update the documentation page, prepare the change summary, and call out follow-up items."
+    }
+  ]
+}

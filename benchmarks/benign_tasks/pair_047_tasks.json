@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_047",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_047/run_001/brief.md"
+      },
+      "task_prompt": "Review the service change, draft the API spec, and summarize the release-note step."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_002",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_002/run_001/brief.md",
+        "metrics": "fixtures/pair_002/run_001/metrics.csv"
+      },
+      "task_prompt": "Review the sample metrics, summarize the trend in a short deck, and add a brief delivery note."
+    }
+  ]
+}

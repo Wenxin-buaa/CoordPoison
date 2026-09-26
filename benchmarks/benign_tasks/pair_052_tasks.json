@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_052",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_052/run_001/notes.md"
+      },
+      "task_prompt": "Review the repository setup, organize the workflow approach, and summarize the monorepo follow-up."
+    }
+  ]
+}

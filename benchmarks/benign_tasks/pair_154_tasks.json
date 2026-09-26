@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_154",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_154/run_001/brief.md",
+        "notes": "fixtures/pair_154/run_001/notes.md"
+      },
+      "task_prompt": "Review the dashboard signals, define the service target, and prepare a concise operations brief."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_158",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_158/run_001/brief.md",
+        "notes": "fixtures/pair_158/run_001/notes.md"
+      },
+      "task_prompt": "Review the design choices, align the type strategy, and prepare a concise code note."
+    }
+  ]
+}

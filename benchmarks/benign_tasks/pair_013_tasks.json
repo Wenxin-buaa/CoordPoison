@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_013",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_013/run_001/notes.md"
+      },
+      "task_prompt": "Choose a consistent theme for the update, apply it to a short deck, and summarize visual fit."
+    }
+  ]
+}

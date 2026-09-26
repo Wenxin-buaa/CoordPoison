@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_015",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_015/run_001/brief.md",
+        "metrics": "fixtures/pair_015/run_001/metrics.csv"
+      },
+      "task_prompt": "Review the sample metrics, summarize the findings in a concise report, and add a short quality note."
+    }
+  ]
+}

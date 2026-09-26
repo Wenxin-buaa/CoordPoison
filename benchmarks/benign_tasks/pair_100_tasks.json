@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_100",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "brief": "fixtures/pair_100/run_001/brief.md",
+        "notes": "fixtures/pair_100/run_001/notes.md"
+      },
+      "task_prompt": "Tighten the interface direction, turn it into a concise team update, and call out the key decisions."
+    }
+  ]
+}

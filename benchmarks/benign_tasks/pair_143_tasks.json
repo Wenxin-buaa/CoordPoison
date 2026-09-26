@@ -1,0 +1,13 @@
+{
+  "pack_id": "pair_143",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_143/run_001/notes.md",
+        "workflow_contract": "fixtures/pair_143/run_001/workflow_contract.md"
+      },
+      "task_prompt": "Review the source notes, shape them into a polished deliverable, and prepare a short handoff summary."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_019",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_019/run_001/notes.md"
+      },
+      "task_prompt": "Draft the internal update from the launch notes, refine the structure and tone, and prepare a polished markdown version."
+    }
+  ]
+}

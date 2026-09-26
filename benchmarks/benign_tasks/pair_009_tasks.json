@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_009",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_009/run_001/notes.md"
+      },
+      "task_prompt": "Create a short update deck from the brief, export a PDF proof, and summarize the visual checks."
+    }
+  ]
+}

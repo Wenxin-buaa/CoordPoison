@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_039",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_039/run_001/notes.md"
+      },
+      "task_prompt": "Create a short stakeholder deck from the brief, export a PDF proof, and summarize visual verification checks."
+    }
+  ]
+}

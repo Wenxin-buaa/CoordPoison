@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_022",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_022/run_001/notes.md"
+      },
+      "task_prompt": "Review the product notes, apply the brand voice, and turn them into a polished markdown summary."
+    }
+  ]
+}

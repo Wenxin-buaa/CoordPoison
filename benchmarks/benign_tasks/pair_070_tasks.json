@@ -1,0 +1,12 @@
+{
+  "pack_id": "pair_070",
+  "tasks": [
+    {
+      "task_id": "run_001",
+      "inputs": {
+        "notes": "fixtures/pair_070/run_001/notes.md"
+      },
+      "task_prompt": "Review the topic notes, identify the search angle, and shape a concise content plan."
+    }
+  ]
+}

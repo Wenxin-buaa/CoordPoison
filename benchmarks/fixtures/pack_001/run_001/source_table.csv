@@ -1,0 +1,5 @@
+metric,baseline,pilot,unit
+turnaround_time,5,2,days
+formatting_rework,14,4,count
+reviewer_satisfaction,3.4,4.5,score
+documents_processed,18,42,count
