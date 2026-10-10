@@ -199,6 +199,84 @@ find CoordPoison/benchmarks/runs/<pack_id>/experiments/<experiment_id>/runner_lo
   -name 'steps.jsonl' -print
 ```
 
+### Batch D Resume And Loop Cleanup
+
+Stages A-C are prerequisites for Stage D. In this README, the required
+commands are the `execute-stage --stage A` and `execute-stage --stage B`
+commands above, followed by `auto-select-payloads` and `expand-variants`.
+Do not start a payload batch until `candidate_targets.json`,
+`payload_selections.json`, and the variant directories exist.
+
+For larger runs, use one `run_payload_batch.py` controller per selected
+payload, or use `run_experiment_parallel.py` for ordinary variant sharding.
+Each payload controller can spawn its own worker process, and its batch log is
+separate from the worker log.
+
+Example single-payload batch launch from the workspace root:
+
+```bash
+cd /path/to/workspace
+
+nohup python3.11 CoordPoison/scripts/run_payload_batch.py \
+  --packs <pack_001>,<pack_002> \
+  --experiment-id-template '{pack}_exp_002' \
+  --payload-pool general \
+  --payload-id 1 \
+  --worker-api-keys-file "$PVF_WORKER_API_KEYS_FILE" \
+  --d2-provider claude-code-sandbox \
+  --d5-provider claude-code-sandbox \
+  --local-provider openai-compatible \
+  --batch-id coordpoison_exp_002_payload_001 \
+  > CoordPoison/benchmarks/runs/batches/coordpoison_exp_002_payload_001.nohup.log 2>&1 &
+```
+
+To run another payload, start another controller with a different
+`--payload-id`, API-key file, and `--batch-id`. To resume only one payload,
+rerun the same command with the same experiment selection and batch id:
+
+```bash
+nohup python3.11 CoordPoison/scripts/run_payload_batch.py \
+  --packs <pack_001>,<pack_002> \
+  --experiment-id-template '{pack}_exp_002' \
+  --payload-pool general \
+  --payload-id 1 \
+  --worker-api-keys-file "$PVF_WORKER_API_KEYS_FILE" \
+  --d2-provider claude-code-sandbox \
+  --d5-provider claude-code-sandbox \
+  --local-provider openai-compatible \
+  --batch-id coordpoison_exp_002_payload_001 \
+  > CoordPoison/benchmarks/runs/batches/coordpoison_exp_002_payload_001.resume.nohup.log 2>&1 &
+```
+
+Batch execution resumes from the current `variant.json` status and skips
+terminal variants. If D4/D4_REVISION or a related D5 preparation step leaves a
+partially written loop and reports an error such as `D4 pre-render coordination
+plan is not specific enough`, delete only that failed loop directory before
+rerunning the same payload command:
+
+```bash
+rm -rf \
+  CoordPoison/benchmarks/runs/<pack_id>/experiments/<experiment_id>/variants/<variant_id>/coordinated/loop_<N>
+```
+
+For the corresponding PVF layout, the concrete example is:
+
+```bash
+rm -rf \
+  pair_poisoning_validation_framework/benchmarks/runs/pair_121/experiments/pair_121_exp_003/variants/pair_121_exp_003_spark-optimization_payload_015_sink/coordinated/loop_003
+```
+
+Inspect the worker log and
+`semantic_generation/pre_render_coordination_plan_validation_error.json`
+before deleting anything. Do not remove the whole variant, its `sink_only`
+directory, or earlier completed loops. After cleanup, rerunning the command
+continues the pending D4 revision from the saved variant state.
+
+For the pair-specific six-worker wrapper and its `--payload-ids`/`--shards`
+resume controls, see
+`pair_poisoning_validation_framework/README.md`. CoordPoison itself uses the
+direct controller command above.
+
 ## Command Help
 
 ```bash
