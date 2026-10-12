@@ -1,4 +1,0 @@
-metric,baseline,pilot,note
-activation_rate,42,56,higher is better
-support_tickets,18,11,lower is better
-median_latency_ms,380,295,lower is better
